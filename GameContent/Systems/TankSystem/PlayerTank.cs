@@ -50,7 +50,7 @@ namespace TanksRebirth.GameContent
         public static int MyTeam;
         public static int MyTankType;
 
-        public static int StartingLives = 3;
+        public static int StartingLives = 99;
 
         // public static Dictionary<PlayerType, Dictionary<TankTier, int>> TanksKillDict = new(); // this campaign only!
         public static Dictionary<int, int> TankKills = new(); // this campaign only!
@@ -150,19 +150,19 @@ namespace TanksRebirth.GameContent
 
         public sealed override void ApplyDefaults(ref TankProperties properties)  {
             properties.TreadVolume = 0.2f;
-            properties.ShellCooldown = 5; // 5
-            properties.ShootStun = 5; // 5
-            properties.ShellSpeed = 3f; // 3f
+            properties.ShellCooldown = 1; // 1
+            properties.ShootStun = 1; // 1
+            properties.ShellSpeed = 5f; // 5f
             properties.MaxSpeed = 1.8f; // 1.8
-            properties.RicochetCount = 1; // 1
-            properties.ShellLimit = 5; // 5
-            properties.MineLimit = 2; // 2
-            properties.MineStun = 8; // 8
+            properties.RicochetCount = 5; // 5
+            properties.ShellLimit = 99; // 99
+            properties.MineLimit = 99; // 99
+            properties.MineStun = 0; // 0
             properties.Invisible = false;
-            properties.Acceleration = 0.3f;
+            properties.Acceleration = 0.5f;
             properties.Deceleration = 0.6f;
-            properties.TurningSpeed = 0.1f;
-            properties.MaximalTurn = MathHelper.ToRadians(10); // normally it's 10 degrees, but we want to make it easier for keyboard players.
+            properties.TurningSpeed = 0.5f;
+            properties.MaximalTurn = 180; // normally it's 10 degrees, but we want to make it easier for keyboard players. and I hack this too...
 
             Properties.ShootPitch = 0.1f * PlayerType;
 
