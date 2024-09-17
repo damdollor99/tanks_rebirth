@@ -161,7 +161,7 @@ namespace TanksRebirth.GameContent
             properties.Invisible = false;
             properties.Acceleration = 0.5f;
             properties.Deceleration = 0.6f;
-            properties.TurningSpeed = 0.5f;
+            properties.TurningSpeed = 1f;
             properties.MaximalTurn = 180; // normally it's 10 degrees, but we want to make it easier for keyboard players. and I hack this too...
 
             Properties.ShootPitch = 0.1f * PlayerType;
