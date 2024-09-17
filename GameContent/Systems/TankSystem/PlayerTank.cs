@@ -495,12 +495,12 @@ namespace TanksRebirth.GameContent
 
                 if (pathPos.X < MapRenderer.MIN_X || pathPos.X > MapRenderer.MAX_X)
                 {
-                    pathRicochetCount++;
+                    pathRicochetCount--;
                     pathDir.X *= -1;
                 }
                 if (pathPos.Y < MapRenderer.MIN_Y || pathPos.Y > MapRenderer.MAX_Y)
                 {
-                    pathRicochetCount++;
+                    pathRicochetCount--;
                     pathDir.Y *= -1;
                 }
 
